@@ -126,6 +126,7 @@ when 'cat'
   puts "AWS_SECRET_ACCESS_KEY=#{item.password}"
   if token
     puts "AWS_SECURITY_TOKEN=#{token.password}"
+    puts "AWS_SESSION_TOKEN=#{token.password}"
   end
 
 when 'rm'
@@ -177,6 +178,7 @@ when 'env'
   puts "export AWS_CREDS_NAME=\"#{item.attributes[:label]}\""
   if token
     puts "export AWS_SECURITY_TOKEN=\"#{token.password}\""
+    puts "export AWS_SESSION_TOKEN=\"#{token.password}\""
   end
 
 when 'shell'
@@ -192,6 +194,7 @@ when 'shell'
   aws_env['AWS_CREDS_NAME'] = item.attributes[:label]
   if token
     aws_env['AWS_SECURITY_TOKEN'] = token.password
+    aws_env['AWS_SESSION_TOKEN'] = token.password
   end
 
   if ARGV.empty?
