@@ -3,7 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
-  gem.name          = "aws-keychain-util"
+  gem.name          = "fizx-aws-keychain-util"
   gem.version       = '0.0.9'
   gem.authors       = ["Zach Wily"]
   gem.email         = ["zach@zwily.com"]
