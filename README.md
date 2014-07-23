@@ -15,7 +15,7 @@ the credentials in the environment.
 
 To install:
 
-    gem install aws-keychain-util
+    gem install fizx-aws-keychain-util
 
 ## Usage
 
